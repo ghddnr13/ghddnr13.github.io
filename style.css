@@ -1,0 +1,150 @@
+/* Animation */
+@keyframes rolling {
+    0% {
+        margin-top: 0;
+    }
+   
+    100% {
+        margin-top: -6em;
+    }
+}
+
+/* CSS reset */
+body, h1, h2,h3 p, ul, dl, dd   {
+    margin: 0; 
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+
+h1,h2,h3 {
+    font-size : 100%;
+    font-weight : normal;
+    
+}
+
+a {
+    color : inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color:  #111;
+    color: #999;
+}
+
+.portrait {
+    background-image: url(images/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 80%;
+}
+
+.profile {
+    padding: 5%;
+}
+
+.profile-header,
+.profile-section {
+    padding-bottom: -0.5%;
+}
+
+.profile-section h2 {
+    border-top: 3px solid;
+    color: orangered;
+    margin-bottom : 20px;
+    padding: 0.5em 0;
+}
+.profile-header {
+
+}
+
+.name {
+    font-size: 40px;
+    line-height: 2;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-family: 'Liu Jian Mao Cao', cursive
+}
+
+.name-job {
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+    height : 2em;
+    overflow: hidden;
+    padding-right : 1em;   
+}
+
+.name-job-list {
+    animation-name: rolling;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.name-title {
+    font-size: 2;
+    font-weight: 20px;
+    line-height: 1;
+    color: blueviolet;
+    margin-left: -0.1em;
+    
+}
+
+.timeline {
+    font-size : 1rem;
+    color : #666;
+}
+
+.timeline li {
+    padding-bottom: 30px;
+}
+
+.timeline li : :last-child {
+    padding-bottom: 0;
+}
+.timeline li h3 {
+    color : orange;
+    float: center;
+    font-size : 1rem;
+    letter-spacing: 0.2em;
+    padding-top : 0.2em;
+    margin-right: 30em;
+    border-top : 2px solid;
+}
+
+.graph li {
+    background: rgb(0,212,255);
+background: linear-gradient(90deg, rgba(0,212,255,1) 8%, rgba(9,9,121,1) 93%, rgba(0,14,36,1) 100%);
+    color: #666;
+    padding: 0.5em 1em;
+    margin: 0.4em 0;
+    border-radius: 50px;
+    box-sizing : border-box;
+}
+
+.graph li::before {
+    content : attr(data-score);
+    float: right;
+}
+
+.graph li [data-score="100%"] {width: 100%;}
+}
+.graph li [data-score="90%"] {width: 90%;}
+}
+.graph li [data-score="80%"] {width: 80%;}
+}
+.graph li [data-score="70%"] {width: 70%;}
+}
+.graph li [data-score="60%"] {width: 60%;}
+}
+
+.list dt {
+    color: orange;
+    float : left;
+    width : 4em;
+
+}
+.list dd {
+    overflow : hidde
+}
